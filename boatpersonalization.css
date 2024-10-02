@@ -62,83 +62,19 @@ body{
     cursor: pointer;
     display: block;
 }
-
-.productimages{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.productimages>div{
-    margin: 10px;
-    /* padding: 20px; */
-}
-.productimages img{
-    height: 250px;
-    width: 350px;
-}
-.product{
-    columns: 2;
-    column-width: 50%;
-    column-rule-style: dashed;
-    column-rule-color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    
-}
-.product .p{
- 
-    font-size: 50px;
-}
-
-.selectarea{
-  
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    width:fit-content;
-    margin-bottom: 20px;
-    
-}
-
-.two{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-
-}
-
-.two:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.buynow{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    border-radius: 5px;
-  
-}
-.buynow:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.cart{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-
-}
-.cart:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+.searchbar{
+    border-style:solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 3px;
+    margin-right: 10px;
+    height: 25px;
 }
 .mobileviewnav{
     display: none;     
     position: sticky;
     top:0px;
-}       
+}
 .mobileviewnav ul{
     display: flex;
     flex-direction: row;
@@ -148,26 +84,39 @@ body{
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.productmobileview{
-    display:none;
+.boatpersonalizationproducts{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.productpurchase{
-    display: none;
+.cart{
+    width:150px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 20px;
+
 }
-.searchbar{
-    border-color: black;
-    border-radius: 10px;
-    margin-right: 10px;            
-    height: 25px;
+.cart:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.boatpersonalizationproducts {
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    column-gap: 0px;
+    background-color: #EDFEFE;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 .contact{
-    position: fixed;
-    top:0px;
-    right: 0px;
-    top: 600px;
-    opacity: 0.5;
+        position: fixed;
+        top:0px;
+        right: 0px;
+        top: 600px;
+        opacity: 0.5;
 }
-@media screen and (min-width:481px) and (max-width:768px) {
+@media screen and (min-width:481px) and (max-width:768px){
     .navbar{
         display:none;
     }
@@ -245,39 +194,16 @@ body{
         cursor: pointer;
         display: block;
     }
-    .productdescrption{
-        display: none;
-    }
-    .product{
-        display: none;
-    }
-    .productmobileview{
-        display: flex;
-        align-items: center; 
-    }
-    .productsimg{
-        display: flex;
+    .boatpersonalizationproducts {
+        display:grid;
+        grid-template-columns:auto ;
+        column-gap: 0px;
+        background-color: #EDFEFE;
+        row-gap: 50px;
         flex-wrap: wrap;
-        flex-direction: row;
+        padding: 10px;
+        margin-left:75px;
     }
-    .products{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    .productmobileview img{
-        height:200px;
-        width: 200px;
-        padding: 20px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    }
-    .p{
-        font-size: 40px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
-    }
-    .productpurchase{
-        display: block;
-    }
+
 
 }

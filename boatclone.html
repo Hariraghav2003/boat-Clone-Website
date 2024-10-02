@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="../Practice/boatclone.css">
     <title>Boat Clone</title>
     <style>
-
-            
+        input::placeholder{
+            color: blue;
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
         <ul>
-            <li  style="margin-right: 85px;"> <img src="../Practice/boat.png" height="50px" width="100px"> </li>
+            <li  style="margin-right: 85px;"> <a href="../Practice/boatclone.html"> <img src="../Practice/boat.png" height="50px" width="100px"> </a> </li>
             <li class="dropdown">
                 categories <i class="fa-solid fa-angle-down fa-xs"></i> 
                 <div class="dropdowncontent">
@@ -24,10 +25,10 @@
                     <a href="../HTML/D5.html">Link 3</a> 
                 </div>
             </li>
-            <li style="margin-left: 20px;" >boat personalization  </li> <br> <br>
+            <li style="margin-left: 20px;" > <a href="../Practice/boatpersonalization.html" style="text-decoration: none; color: black;" target="_blank"> boat personalization </a>   </li> <br> <br>
             <li style="margin-left: 20px;">corporate orders</li>
             <li style="margin-left: 20px; margin-right: 458px;">more</li>
-            <li> <img  style="margin-left: 20px; cursor:help;" src="../Practice/search-bar-icon-with-magnifying-glass-and-voice-search-button-search-tool-vector.jpg" height="65px" width="300px"> </li>
+            <li> <i class="fa-solid fa-lg fa-magnifying-glass" style="color: #000000; margin-right: 10px;   margin-left: 100px;"></i> <input type="search" placeholder="boatAirpodes 161" class="searchbar"> </li>
             <li class="userdropdown" style="margin-right: 20px;"> <i class="fa-regular fa-user fa-lg"></i>
                 <div class="userdropdowncontent">
                     <a href="../Practice/signin.html" target="_blank">Sign-in </a> 
@@ -43,7 +44,7 @@
             <li class="mdropdown">
                 <i  class="fa-solid fa-bars"></i>
                 <div class="mdropdowncontent">
-                    <ul style="display: block;">
+                    <ul style="display:block;">
                         <li class="dropdown">
                         categories <i class="fa-solid fa-angle-down fa-xs"></i> 
                         <div class="dropdowncontent">
@@ -52,7 +53,7 @@
                             <a href="../HTML/D5.html">Link 3</a> 
                         </div>
                         </li> 
-                        <li>boat personalization</li>
+                        <li style="text-overflow:ellipsis"><a href="../Practice/boatpersonalization.html" style="text-decoration: none; color: black;" target="_blank"> boatpersonalization </a> </li> 
                         <li>corporate orders</li>
                         <li>more</li>
                     </ul>
@@ -60,8 +61,8 @@
             </li>
 
             
-            <li > <img style="margin-left:10px"  src="../Practice/boat.png" height="50px" width="50px"> </li>
-            <li> <img src="../Practice/search-bar-icon-with-magnifying-glass-and-voice-search-button-search-tool-vector.jpg" height="65px" width="250px"> </li>
+            <li ><a href="../Practice/boatclone.html"> <img style="margin-left:10px"  src="../Practice/boat.png" height="50px" width="50px"> </a> </li>
+            <li> <i class="fa-solid fa-lg fa-magnifying-glass" style="color: #000000; margin-right: 10px;   margin-left: 50px;"></i> <input type="search" placeholder="boatAirpodes 161" class="searchbar"> </li>
             <li class="userdropdown" style="margin-right: 15px;"> <i class="fa-regular fa-user fa-lg"></i>
                 <div class="userdropdowncontent">
                     <a href="../Practice/signin.html" target="_blank">Sign-in </a> 
@@ -80,12 +81,12 @@
         Dicta debitis minus veritatis aspernatur inventore consequuntur doloremque facilis iusto culpa vel. Eum, nam nesciunt corrupti rerum ratione assumenda. Et accusantium quas dignissimos impedit sit aliquam repellendus voluptas iure minus!
        
         </p>
-        <a href="../HTML/D1.html"  target="_blank"> Shop products -> </a> 
+        <a href="#products"  target="_blank"> Shop products -> </a> 
         <img style="float: right;" src="../Practice/Artboard3_ceb76e50-6c02-4538-9a8f-7fb2f50cc1bf_600x.webp">
     </div>
 
     <p class="one">Best <b> Sellers </b></p>
-    <div class="products">
+    <div id="products" class="products">
         <div> 
             <a class="two" href="../Practice/product1.html"> 
             <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/AD_161.jpg?v=1686297917" height="200px" width="225px">  </a> <br> 

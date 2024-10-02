@@ -149,6 +149,14 @@ body{
     cursor: pointer;
     display: block;
 }
+.searchbar{
+    border-style:solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width: 3px;
+    margin-right: 10px;
+    height: 25px;
+}
 @media screen and (min-width:481px) and (max-width:768px) {
     .navbar{
         display:none;
@@ -261,5 +269,13 @@ body{
     }
     .two{
         text-decoration: no;
+    }
+    .searchbar{
+        border-style:solid;
+        border-color: black;
+        border-radius: 10px;
+        border-width: 3px;
+        margin-right: 10px;
+        height: 25px;
     }
 }
