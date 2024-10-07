@@ -13,6 +13,7 @@ body{
     background-color: white;
     justify-content: flex-start;
     flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .dropdown{
     position: relative;
@@ -110,11 +111,11 @@ body{
     padding: 10px;
 }
 .contact{
-        position: fixed;
-        top:0px;
-        right: 0px;
-        top: 600px;
-        opacity: 0.5;
+    position: fixed;
+    top:0px;
+    right: 0px;
+    top: 600px;
+    opacity: 0.5;
 }
 @media screen and (min-width:481px) and (max-width:768px){
     .navbar{
@@ -182,6 +183,7 @@ body{
         background-color: #828282;
         box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
         z-index: 1;
+        width: 90px;
 
     }
     .userdropdowncontent a{

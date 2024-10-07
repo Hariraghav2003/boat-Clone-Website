@@ -15,63 +15,11 @@ body{
     flex-wrap: wrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-.content{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    column-count: 2;
-    column-width: 50%;
-    padding: 20px;
-
-}
-
-.content a{
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin-top: 200px;
-    border-radius: 10px;
-}
-
-.content p{
-    font-size: 100px;
-    margin: 0px;
-    margin-bottom: 20px;
-}
-
-.content p~p{
-    font-size: xx-large;
-}
-
-.products{
-    display:flex;
-    justify-content: space-between;
-
-    flex-wrap: wrap;
-}
-.products>div{
-    margin: 30px;
-    /* padding: 10px; */
-    text-align: justify;
-   color: black;
-   font-weight: bolder;
-   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-}
-.products p{
-    background-color:#F5CF39; 
-    margin:10px; 
-    padding: 10px; 
-    border-radius:5px ; 
-    text-align: center;
-}
-
 .dropdown{
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
-
 .dropdowncontent{
     display: none;
     position: absolute;
@@ -91,43 +39,6 @@ body{
     cursor: pointer;
     display: block;
 }
-
-.contact{
-    position: fixed;
-    top:0px;
-    right: 0px;
-    top: 600px;
-    opacity: 0.5;
-}
-.mobileviewnav{
-    display: none;     
-    position: sticky;
-    top:0px;
-}
-
-.mobileviewnav ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    align-items: center;
-    background-color: white;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-
-}
-
-.one{
-    font-size: 55px;
-    margin-top: 100px;
-    margin-bottom: 0px;
-}
-
-.products>div:hover{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.content>img{
-    height: 500px;
-}
 .userdropdown{
     position: relative;
     display: inline-block;
@@ -141,6 +52,7 @@ body{
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     padding: 12px 16px;
     z-index: 1;
+
 }
 .userdropdowncontent a{
     color: whitesmoke;
@@ -152,6 +64,94 @@ body{
     cursor: pointer;
     display: block;
 }
+
+.productimages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.productimages>div{
+    margin: 10px;
+    /* padding: 20px; */
+}
+.productimages img{
+    height: 250px;
+    width: 350px;
+}
+.product{
+    columns: 2;
+    column-width: 50%;
+    column-rule-style: dashed;
+    column-rule-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    
+}
+
+.selectarea{
+  
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width:fit-content;
+    margin-bottom: 20px;
+    
+}
+
+.two{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+
+.two:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.buynow{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+  
+}
+.buynow:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cart{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+.cart:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.mobileviewnav{
+    display: none;     
+    position: sticky;
+    top:0px;
+}       
+.mobileviewnav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    background-color: white;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.productmobileview{
+    display:none;
+}
+.productpurchase{
+    display: none;
+}
 .searchbar{
     border-style:solid;
     border-color: black;
@@ -160,41 +160,32 @@ body{
     margin-right: 10px;
     height: 25px;
 }
+.contact{
+    position: fixed;
+    top:0px;
+    right: 0px;
+    top: 600px;
+    opacity: 0.5;
+}
+.p{
+    display: none;
+}
+#carouselExampleControls{
+    margin: 150px;
+     width:80%;
+     height: 80%;
+     align-items: center;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
 @media screen and (min-width:481px) and (max-width:768px) {
+    .navbar ul{
+        display: none;
+    }
     .navbar{
         display:none;
     }
     .mobileviewnav{
         display: block;
-    }
-    .content{
-        display: flex;
-       
-        flex-flow: column wrap;
-    }
-    .content>img{
-        margin-right: 20px;
-        height: 500px;
-        width: 435px;
-    }
-    .content p{
-        font-size: 18px;
-    }
-    .content a{
-        display: flex;
-        margin: 0px;
-        text-decoration: none;
-        background-color: black;
-        color: white;
-        border-radius: 10px;
-        flex-flow: wrap row;
-        margin-bottom: 50px;
-        width:fit-content
-    }
-    .one{
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: 25px;
     }
     .mdropdown{
         position: relative;
@@ -248,14 +239,15 @@ body{
         position: relative;
         display: inline-block;
         cursor: pointer;
+        position: relative;
+        z-index: 1;
+
     }
     .userdropdowncontent{
         display: none;
         position: absolute;
         background-color: #828282;
         box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-        z-index: 1;
-        width: 85px;
 
     }
     .userdropdowncontent a{
@@ -264,22 +256,48 @@ body{
         text-decoration: none;
         display: block;
     }
+    .userdropdowncontent:hover a{
+        color:whitesmoke;
+  
+    }
     .userdropdown:hover.userdropdowncontent{
         cursor: pointer;
         display: block;
+
     }
-    .products{
-        justify-content: center;
+    .productdescrption{
+        display: none;
     }
-    .two{
-        text-decoration: no;
+    .product{
+        display: none;
     }
-    .searchbar{
-        border-style:solid;
-        border-color: black;
-        border-radius: 10px;
-        border-width: 3px;
-        margin-right: 10px;
-        height: 25px;
+    .productmobileview{
+        display: flex;
+        align-items: center;
+        height: 300px; 
+        width: 400px;
+        margin-left: -60px;
     }
+
+    .productmobileview img{
+        height:200px;
+        width: 200px;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .p{
+        font-size: 40px;
+        margin-left: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        display: block;
+    }
+    .productpurchase{
+        display: block;
+        margin-left: 20px;
+    }
+    #carouselExampleControls{
+        z-index: -1;
+    }
+
 }
