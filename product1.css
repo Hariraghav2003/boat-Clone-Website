@@ -256,7 +256,7 @@ body{
     }
     .productmobileview{
         display: flex;
-        align-items: center; 
+        align-items: center;
     }
     .productsimg{
         display: flex;
@@ -275,6 +275,7 @@ body{
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
     .p{
+        padding-top: 200px;
         font-size: 40px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bolder;
